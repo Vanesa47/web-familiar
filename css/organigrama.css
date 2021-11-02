@@ -1,0 +1,123 @@
+body{
+    
+	/*background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,69,38,1) 35%, rgba(0,212,255,1) 100%);  */
+	margin: 0;
+    font-family: Arial, Helvetica, sans-serif;  
+
+}
+
+/*
+	Estilos para el organigrama
+	Version: DEV
+*/
+.organigrama{
+	overflow: auto;
+	background-size: auto 100%;
+	padding: 50px;
+	max-height: 700px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none; 
+}
+.organigrama  table{
+	width: 100%;
+}
+.organigrama table td{
+	text-align: center;
+	vertical-align: top;
+	border-style: none;
+}
+.organigrama .nodo{
+	position: relative;
+	width: 120px;
+	/*border-bottom: 5px solid #34495e;
+	background: #34495e;*/
+	background: #ffc800;
+	color:black;
+	font-weight: bold;
+	display: inline-block;
+	padding: 20px 10px;
+	margin: 0 10px;
+	cursor: pointer;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+
+	box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.60);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.60);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.60);
+
+	-webkit-transition: 1s linear;
+    transition: 1s linear
+	
+}
+
+.organigrama .nodo:hover {
+	transform: scale(1.1); /* (110% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  
+}
+
+.organigrama .nodo .nodo-nombre:hover{
+	color: white;
+	font-weight: bold;
+}
+
+
+.organigrama table td .line-down{
+	width: 2px;
+	display: inline-block;
+}
+.organigrama .line{
+	border-width: 2px;
+}
+.organigrama .line.up{
+	border-top: 2px solid #34495e !important;
+}
+.organigrama .line.right{
+	border-right: 2px solid #34495e !important;
+}
+.organigrama .line.left{
+	border-left: 2px solid #34495e !important;
+}
+.organigrama .nodo.collapsed{
+	border-bottom-color: #d35400;
+}
+.organigrama .nodo .controls{
+	display: none;
+	position: absolute;
+	top: 0;
+	right: -56px;
+	background: #ecf0f1;
+	z-index: 2;
+	padding: 6px 10px 6px 6px;
+}
+.organigrama .nodo:hover .controls{
+	display: block;
+}
+
+.organigrama .nodo .btn-collapse{
+	position: absolute;
+	display: inline-block;
+	color: #e74c3c;
+	top: 100%;
+	left: 50%;
+	margin-top: 5px;
+	margin-left: -9px;
+	font-size: 18px;
+	background: #ecf0f1;
+}
+.organigrama .nodo .badge{
+	position: absolute;
+	top: 0;
+	left: 0;
+	color: #2c3e50;
+	background: #ecf0f1;
+}
+.organigrama .nodo .nodo-nombre{
+	font-style:normal;
+	color: white;
+	
+}
+
+
