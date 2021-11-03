@@ -12,7 +12,7 @@ var data = {
         {
           "id": 3,
           "puesto": "YO",
-          "nombre": "K Vanesa Cardona Perez",
+          "nombre": "K Vanesa CP",
           "hijos": [
            
           ]
@@ -20,18 +20,18 @@ var data = {
         {
           "id": 4,
           "puesto": "HERMANA",
-          "nombre": "X Ivonne Cardona Perez",
+          "nombre": "X Ivonne CP",
           "hijos": []
         },
         {
           "id": 5,
           "puesto": "HERMANO",
-          "nombre": "Kevin J Cardona Perez",
+          "nombre": "Kevin J CP",
           "hijos": []
         },{
           "id": 6,
           "puesto": "HERMANO",
-          "nombre": "J Diego Cardona Perez",
+          "nombre": "J Diego CP",
           "hijos": []
         }
       ]
